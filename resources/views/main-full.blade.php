@@ -28,8 +28,9 @@
             </div>
         </section>
         <section class="main__content">
-            <div class="container-fluid">
+            <div class="container">
                 @yield('content')
+                @yield('components')
             </div>
         </section>
     </section>
@@ -42,6 +43,10 @@
     </section>
 
     <div class="overlay"></div>
+    <script>
+        let user = '{{ \Illuminate\Support\Facades\Auth::id() }}';
+    </script>
+    <script src="{{ asset('js/app.js') }}"></script>
     <script src="{{ asset('js/lang.json') }}"></script>
     <script src="{{ asset('lib/jquery/jquery.min.js') }}"></script>
     <script src="{{ asset('lib/bootstrap/js/bootstrap.bundle.min.js') }}"></script>

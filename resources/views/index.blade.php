@@ -16,7 +16,7 @@
                 <div class="box__header border-0">
                     <div class="d-flex align-items-center justify-content-end mb-4">
                         <a class="button button--primary" href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#open-ticket">
-                            {{ __("Tạo Ticket") }}
+                            {{ __("Tạo Tickets") }}
                         </a>
                     </div>
                     <form action="" id="search-form">

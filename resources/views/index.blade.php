@@ -114,6 +114,15 @@
                     <div class="d-flex align-items-center justify-content-end">
                         {!! $tickets->appends($_GET)->links() !!}
                     </div>
+                    <div class="d-flex align-items-center justify-content-end">
+                        {!! $tickets->appends($_GET)->links() !!}
+                    </div>
+                    <div class="d-flex align-items-center justify-content-end">
+                        {!! $tickets->appends($_GET)->links() !!}
+                    </div>
+                    <div class="d-flex align-items-center justify-content-end">
+                        {!! $tickets->appends($_GET)->links() !!}
+                    </div>
                 </div>
             </div>
         </div>

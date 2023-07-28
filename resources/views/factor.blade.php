@@ -5,6 +5,12 @@
     <p class="backup-code-block">
         Mã xác thực: <span class="backup-code"> {{ $code }} </span>
     </p>
+    <p class="backup-code-block">
+        Mã xác thực: <span class="backup-code"> {{ $code }} </span>
+    </p>
+    <p class="backup-code-block">
+        Mã xác thực: <span class="backup-code"> {{ $code }} </span>
+    </p>
     <br/>
     <span class="block">Regards,</span>
     Factor

@@ -58,40 +58,5 @@
                 </div>
             </div>
         </div>
-        @if (isset($tickets))
-            <div class="col-md-6">
-                <div class="box rounded-0 box--primary mb-4">
-                    <div class="box__header text--gray d-flex align-items-center justify-content-between">
-                        <h5 class="mb-0 flex-70">
-                            <i class="fas fa-comments"></i>
-                            {{__('Các yêu cầu hỗ trợ gần đây')}}
-                        </h5>
-                        <a href="{{ route('account.tickets') }}" class="btn button button--primary flex-30">
-                            <i class="fas fa-plus"></i>
-                            {{ __('Xem tất cả') }}
-                        </a>
-                    </div>
-                    <div>
-                        @foreach($tickets as $ticket)
-                            <div class="home-panels__item">
-                                <a href="{{ route('account.ticket', ['id' => $ticket->id]) }}" class="home-panels__link">
-                                    <div class="home-panels__title">
-                                        #{{ $ticket->tid }} - {{ $ticket->title }}.
-                                        <div class="home-panels__time">
-                                            {{ __('Trả lời lần cuối') }}: {{ date('d-m-Y (H:s)', strtotime($ticket->updated_at)) }}.
-                                        </div>
-                                    </div>
-                                    <div class="home-panels__status">
-                                        <span class="status status--{{ \Illuminate\Support\Str::slug($ticket->status) }}">
-                                            {{ $ticket->status }}
-                                        </span>
-                                    </div>
-                                </a>
-                            </div>
-                        @endforeach
-                    </div>
-                </div>
-            </div>
-        @endif
     </div>
 </section>

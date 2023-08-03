@@ -35,13 +35,6 @@
         </section>
     </section>
 
-    <section class="footer">
-        <div class="footer__copyright">
-            <span>© 2021.</span> {{ __('Bản quyền thuộc về Công ty Công nghệ Dịch vụ MAXCLOUD.VN.') }}
-        </div>
-        <div class="footer__submenu"></div>
-    </section>
-
     <div class="overlay"></div>
     <script>
         let user = '{{ \Illuminate\Support\Facades\Auth::id() }}';

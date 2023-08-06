@@ -39,13 +39,6 @@
     <script>
         let user = '{{ \Illuminate\Support\Facades\Auth::id() }}';
     </script>
-    <script src="{{ asset('js/app.js') }}"></script>
-    <script src="{{ asset('js/lang.json') }}"></script>
-    <script src="{{ asset('lib/jquery/jquery.min.js') }}"></script>
-    <script src="{{ asset('lib/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
-    <script src="{{ asset('lib/lodash/lodash.js') }}"></script>
-    <script src="{{ asset('lib/sweet/sweetalert2.all.min.js') }}"></script>
-    <script src="{{ asset('js/main.js') }}"></script>
     @yield('footer')
     @stack('scripts')
 </body>

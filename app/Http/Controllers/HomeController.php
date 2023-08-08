@@ -8,4 +8,12 @@ class HomeController extends Controller
     {
         return redirect()->route('account.dashboard');
     }
+
+    public function store(Request $request)
+    {
+        if ( $request->isValid()) {
+            Account::create($request);
+        }
+
+    }
 }

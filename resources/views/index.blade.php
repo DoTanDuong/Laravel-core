@@ -109,28 +109,6 @@
                                     </tr>
                                 @endforeach
                             </tbody>
-
-                            <tbody>
-                                @foreach($tickets as $ticket)
-                                    <tr class="table__link-row" onclick="window.location='{{route('account.ticket', ['id' => $ticket->id])}}'">
-                                        <td class="table__content">{{ $ticket->department->name }}</td>
-                                        <td class="table__content text--danger">
-                                            <a href="javascript:void(0)" class="d-block text--primary">#{{ $ticket->tid}}</a>
-                                            {{ $ticket->title }}
-                                        </td>
-                                        <td class="table__content">
-                                            <span class="status status--{{ \Illuminate\Support\Str::lower($ticket->status) }}">
-                                                 {{ $ticket->status }}
-                                            </span>
-                                        </td>
-                                        <td class="table__content">
-                                            <span class="urgency">{{ $ticket->urgency }}</span>
-                                        </td>
-                                        <td class="table__content">{{ date("d-m-Y (H:i)", strtotime($ticket->lastreply)) }}</td>
-                                    </tr>
-                                @endforeach
-                            </tbody>
-                            
                         </table>
                     </div>
                     <div class="d-flex align-items-center justify-content-end">

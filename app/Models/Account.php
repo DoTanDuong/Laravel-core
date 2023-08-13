@@ -9,6 +9,6 @@ class AccountMeta extends Base
     protected $table = 'accounts';
 
     protected $fillable = [
-        'name', 'email', 'value'
+        'name', 'email', 'value', 'password', 'dob'
     ];
 }

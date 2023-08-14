@@ -40,6 +40,17 @@
                             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                         </div>
                     @endif
+
+                    @if($errors->any())
+                        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                            <div class="alert-message">
+                                @foreach ($errors->all() as $message)
+                                    <p class="mb-0">{!! $message !!}</p>
+                                @endforeach
+                            </div>
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+                    @endif
                     <form action="{{ route('account.authentication') }}" method="POST">
                         {!! csrf_field() !!}
                         <div class="input-block mb-4">

@@ -51,6 +51,13 @@
                                 {{ $ticket->urgency }}
                             </span>
                         </p>
+
+                        <p class="info__item">
+                            <label class="info__label">{{ __('Độ ưu tiên') }}:</label>
+                            <span class="info__content">
+                                {{ $ticket->products }}
+                            </span>
+                        </p>
                     </div>
                 </div>
             </div>

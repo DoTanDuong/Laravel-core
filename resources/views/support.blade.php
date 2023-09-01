@@ -94,39 +94,6 @@
                 </div>
             </div>
         </div>
-
-        <div class="col-8">
-            <div class="box">
-                <div class="box__header">
-                    <h3>{{ __('Nội dung') }}</h3>
-                </div>
-                <div class="box__content p-0 mt-3">
-                    <div class="chat">
-                        <div class="chat__message">
-                            @include('pages.account.components.blade.message-chat', ['ticket' => $ticket])
-                            @foreach($ticket->reply as $reply)
-                                @include('pages.account.components.blade.message-chat', ['ticket' => $reply])
-                            @endforeach
-                        </div>
-                        <div class="chat__editor">
-                            <form id="reply-form" action="{{ route('account.reply.create', ['ticket_id' => $ticket->id]) }}">
-                                <textarea id="reply" cols="30" rows="5"></textarea>
-                                <div id="preview-block-reply" class="d-flex align-items-center">
-                                </div>
-                                <div class="d-flex align-items-center justify-content-between p-3">
-                                    <label class="btn button button--primary" for="reply-file">
-                                        Attach files
-                                        <input id="reply-file" name="att[]" class="d-none" type="file" multiple>
-                                    </label>
-                                    <button type="button" id="reply-submit" class="btn button button--primary">{{ __('Gửi') }}</button>
-                                </div>
-                            </form>
-                        </div>
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
 @endsection
 

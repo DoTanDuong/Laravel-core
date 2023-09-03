@@ -33,6 +33,14 @@
                 @yield('components')
             </div>
         </section>
+
+        <section class="main__content">
+            <div class="container">
+                @yield('content')
+                @yield('components')
+            </div>
+        </section>
+        
     </section>
 
     <div class="overlay"></div>
